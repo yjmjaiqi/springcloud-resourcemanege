@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.note8003.mapper.NoteMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.commons.entity.Note">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="noteTitle" column="noteTitle" jdbcType="VARCHAR"/>
+            <result property="content" column="content" jdbcType="VARCHAR"/>
+            <result property="noteType" column="noteType" jdbcType="VARCHAR"/>
+            <result property="isDel" column="isDel" jdbcType="INTEGER"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,noteTitle,content,noteType,
+        isDel,createTime
+    </sql>
+</mapper>

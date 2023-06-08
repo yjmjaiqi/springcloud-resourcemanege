@@ -1,0 +1,16 @@
+server:
+  port: 7002
+spring:
+  application:
+    name: video-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+
+upload:
+  path: D:\桌面\资料\2023-下\springcloud\resource_manage\synthesize1\video7002\src\main\resources\static\videos\

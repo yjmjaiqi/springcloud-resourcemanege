@@ -1,0 +1,11 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: image-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+upload:
+  path: D:\桌面\资料\2023-下\springcloud\resource_manage\synthesize1\image7001\src\main\resources\static\images\
